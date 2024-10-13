@@ -386,3 +386,18 @@ footer a {
 .auth-switch a:hover {
   text-decoration: underline;
 }
+
+.social-icons {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
