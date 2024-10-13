@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full Stack Development Course</title>
+    <meta name="description" content="Join our Full Stack Development Course to learn HTML, CSS, JavaScript, Node.js, and more with CodeWithHarry!" />
+    <meta name="keywords" content="Full Stack Development, HTML, CSS, JavaScript, Web Development, CodeWithHarry, PHP, MySQL, Node.js, Express.js, MongoDB" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FullStackstyle.css">
+    <link rel="stylesheet" href="enroll.html">
+</head>
+
+<body>
+    <div class="hero">Learn Full Stack Development!</div>
+
+    <main>
+        <section class="content" id="about">
+            <h1>About the Course</h1>
+            <p>
+                In this course, you will learn about all the technologies involved in web development. All the videos will be uploaded on my YouTube channel “CodeWithHarry” under the playlist section, which you can access from the video description on YouTube. This course is designed to benefit students who are new to this field. You will get complete knowledge of HTML, CSS, and JavaScript, starting from scratch. Additionally, for those with some knowledge, this course offers advanced insights and projects.
+            </p>
+            <img src="https://infidata.in/assets/img/courses/web-development-training-in-bangalore.jpg" alt="Web Development Technologies" class="thumbnail" />
+            <p>
+                HTML (HyperText Markup Language) is essential for any website, serving as its skeleton. CSS (Cascading Style Sheets) beautifies the site, while JavaScript adds functionality. Together, they create a fully functional web experience.
+            </p>
+            <p>
+                For example, consider a car: HTML is the body, CSS is the design and color, and JavaScript is the engine that powers it.
+            </p>
+            <p>
+                As we progress, you'll also learn about PHP and MySQL for back-end development. This knowledge is crucial for managing user data and creating dynamic content.
+            </p>
+            <p>
+                Finally, we will delve into advanced web development concepts such as Node.js, Express.js, and MongoDB.
+            </p>
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>Introduction to HTML</li>
+                <li>Styling with CSS</li>
+                <li>Dynamic functionalities with JavaScript</li>
+                <li>Back-end development with Node.js</li>
+                <li>Database management with MySQL</li>
+                <li>Advanced concepts in web development</li>
+            </ul>
+            <a href="enroll.html" class="button" target="_blank" rel="noopener noreferrer">Enroll Now!</a>
+        </section>
+
+        <section class="content" id="video">
+            <h1>Course Introduction Video</h1>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/l1EssrLxt7E?si=NU1alCAAr44xoPN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>
+                Watch the video above for an overview of what you'll learn in this course!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 EdTech. All rights reserved.</p>
+        
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to Top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show or hide the back-to-top button
+        window.onscroll = function () {
+            const button = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+</body>
+
+</html>

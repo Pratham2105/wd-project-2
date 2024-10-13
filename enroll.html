@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll Now | EdTech</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">EdTech</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="login.html" class="btn primary-btn">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Enroll Form Section -->
+  <section class="auth-container">
+    <div class="container">
+      <div class="form-box">
+        <h2>Enroll Now</h2>
+        <form id="enroll-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+
+          <label for="course">Select Course</label>
+          <select id="course" required>
+            <option value="">--Select a Course--</option>
+            <option value="web-development">Web Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="ui-ux">UI/UX Design</option>
+            <option value="digital-marketing">Digital Marketing</option>
+          </select>
+
+          <button type="submit" class="btn primary-btn">Enroll Now</button>
+        </form>
+
+        <p class="auth-switch">
+          Already have an account? <a href="login.html">Login</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('enroll-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const course = document.getElementById('course').value;
+
+      alert(`Enrollment successful! Name: ${name}, Email: ${email}, Course: ${course}`);
+    });
+  </script>
+</body>
+</html>

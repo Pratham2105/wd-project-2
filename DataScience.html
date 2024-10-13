@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Science Course</title>
+    <meta name="description" content="Join our Data Science Course to learn Python, Statistics, Machine Learning, and more with CodeWithHarry!" />
+    <meta name="keywords" content="Data Science, Python, Machine Learning, Statistics, CodeWithHarry, Data Analysis, SQL, Pandas, NumPy" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="DataScienceStyle.css">
+    <link rel="stylesheet" href="enroll.html">
+</head>
+
+<body>
+    <div class="hero">Learn Data Science!</div>
+
+    <main>
+        <section class="content" id="about">
+            <h1>About the Course</h1>
+            <p>
+                In this course, you will learn the core concepts and technologies involved in Data Science. The course is designed for both beginners and those with some experience in the field. We will cover the fundamental skills you need, from data analysis to machine learning.
+            </p>
+            <img src="https://aptronnoida.in/blog/wp-content/uploads/2021/01/Data-Science-Course-in-Noida.jpg" alt="Data Science Technologies" class="thumbnail" />
+            <p>
+                You will start by learning Python, one of the most popular programming languages for data science, and how to use libraries like Pandas and NumPy for data manipulation and analysis.
+            </p>
+            <p>
+                We will also cover statistical concepts, data visualization techniques, and how to build machine learning models using tools like Scikit-Learn and TensorFlow.
+            </p>
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>Introduction to Python for Data Science</li>
+                <li>Data manipulation with Pandas</li>
+                <li>Numerical computing with NumPy</li>
+                <li>Data visualization with Matplotlib and Seaborn</li>
+                <li>Machine Learning concepts and algorithms</li>
+                <li>Building predictive models</li>
+            </ul>
+            <a href="enroll.html" class="button">Enroll Now!</a>
+        </section>
+
+        <section class="content" id="video">
+            <h1>Course Introduction Video</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-ETQ97mXXF0?si=-I232qbhlvh8yoFG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>
+                Watch the video above for an overview of what you'll learn in this course!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 EdTech. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to Top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show or hide the back-to-top button
+        window.onscroll = function () {
+            const button = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+</body>
+
+</html>

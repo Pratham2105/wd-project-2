@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cyber Security Course</title>
+    <meta name="description" content="Join our Cyber Security Course to learn about network security, ethical hacking, and more with CodeWithHarry!" />
+    <meta name="keywords" content="Cyber Security, Network Security, Ethical Hacking, CodeWithHarry, Information Security, Security Best Practices" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CyberSecuritystyle.css">
+</head>
+
+<body>
+    <div class="hero">Learn Cyber Security!</div>
+
+    <main>
+        <section class="content" id="about">
+            <h1>About the Course</h1>
+            <p>
+                In this course, you will explore the critical aspects of Cyber Security. All the videos will be uploaded on my YouTube channel “CodeWithHarry” under the playlist section, which you can access from the video description on YouTube. This course is tailored for beginners as well as those looking to enhance their knowledge in the field of cybersecurity.
+            </p>
+            <img src="https://media.licdn.com/dms/image/v2/D5612AQE0r5WC8r0HQg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1657711469335?e=2147483647&v=beta&t=AA7ierE6T8n-g7EDphWBu9qKdqcsXkOXo4tj7xg146s" alt="Cyber Security Technologies" class="thumbnail" />
+            <p>
+                You will learn about network security, ethical hacking, security protocols, and how to protect sensitive information from cyber threats. The course will cover both theoretical concepts and practical skills needed to secure networks and systems.
+            </p>
+            <p>
+                As you progress, you will work on real-world scenarios and projects to solidify your understanding of Cyber Security practices.
+            </p>
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>Introduction to Cyber Security</li>
+                <li>Network Security Fundamentals</li>
+                <li>Ethical Hacking Techniques</li>
+                <li>Security Best Practices</li>
+                <li>Incident Response and Management</li>
+                <li>Real-world Applications of Cyber Security</li>
+            </ul>
+            <a href="enroll.html" class="button">Enroll Now!</a>
+        </section>
+
+        <section class="content" id="video">
+            <h1>Course Introduction Video</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hXSFdwIOfnE?si=GlxmkZ0dY6ZjGt5T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>
+                Watch the video above for an overview of what you'll learn in this course!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 EdTech. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to Top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Show or hide the back-to-top button
+        window.onscroll = function () {
+            const button = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+</body>
+
+</html>
